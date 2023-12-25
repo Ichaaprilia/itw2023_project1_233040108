@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Icha Aprilia</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/f308b826c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Portfo<span>lio.</span></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                <div class="toggleSwitch">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="hero-text">
+                    <h3>Hi, There!</h3>
+                    <h1>I am <span class="input"></span></h1>
+                    <p>Mahasiswa Program Studi Fakultas Teknik Informatika Universitas Pasundan Tahun 2023
+                    </p>
+                    <div class="social">
+                        <a href="https://www.tiktok.com/@hyicantik"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/ptri.aprili/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/icha.ap.5836/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ptri-aprili-386625298/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <button type="button"><a href="https://www.linkedin.com/in/ptri-aprili-386625298/">More About
+                            Me</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Saya adalah seorang Mahasiswa Teknik Informatika di Universitas Pasundan, sekarang saya berada di
+                        semester pertama. Saya
+                        memiliki
+                        ketertarikan dalam programming. Saya percaya bahwa melalui pendidikan dan pengalaman, saya dapat
+                        membawa
+                        dampak positif dalam dunia programming.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('address')">Address</p>
+                        <p class="tab-links" onclick="opentab('ttl')">TTL</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="address">
+                        <ul>
+                            <li><span>Village</span><br>Sinagar</li>
+                            <li><span>Subdistrict</span><br>Tanggeung</li>
+                            <li><span>Regency</span><br>Cianjur<br></li>
+                            <li><span>Province</span><br>Jawa Barat</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="ttl">
+                        <ul>
+                            <li><span>Place</span><br>Cianjur</li>
+                            <li><span>Date</span><br>28 April 2005<br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Sekarang</span><br>Universitas Pasundan</li>
+                            <li><span>2020--2023</span><br>Sma Sapta Dharma </li>
+                            <li><span>2017-2020</span><br>Mts Almanshuriyah</li>
+                            <li><span>2012-2017</span><br>Sdn Pagelaran II</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skill</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML</h2>
+                    <p>Struktur Halaman Web, Pembentuk Konten, Input, Tag dan Elemen HTML.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS </h2>
+                    <p>Desain dan Tata Letak, Responsive, Animasi, Transisi, Gaya dan Penataan.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Java Script</h2>
+                    <p>Bahasa Pemrograman, Interaksi Pengguna, Animasi dan Efek.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- gallery -->
+    <div id="gallery">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/project1.png">
+                    <div class="layer">
+                        <h3>My Web Site</h3>
+                        <p>Ini Website ku Mana Website mu?</p>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project2.png">
+                    <div class="layer">
+                        <h3>My Web Shop</h3>
+                        <p>Menyediakan banyak sekali barang-barang mewah</p>
+                        <a href="#"><i class="fas fa-weight-hanging"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project3.png">
+                    <div class="layer">
+                        <h3>My Web Site</h3>
+                        <p>Ini Website ku Mana Website mu?</p>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/ptri.aprili/" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ptriaprili284@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>085720279186</p>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@hyicantik"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/ptri.aprili/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/icha.ap.5836/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ptri-aprili-386625298/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Created with<i class="fa-solid fa-heart"></i> by <a
+                    href="https://www.instagram.com/ptri.aprili/">Ptri.Aprili</a></p>
+        </div>
+    </div>
+
+    <!-- Js Code -->
+    <script type="js" src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Icha Aprilia."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true
+        })
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const toggleSwitch = document.querySelector('.toggleSwitch')
+        toggleSwitch.addEventListener('click', function () {
+            document.body.classList.toggle('switch')
+        })
+    </script>
+
+    <!-- End Js Code -->
+
+</body>
+
+</html>
